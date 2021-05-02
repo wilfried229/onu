@@ -1,56 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>@yield('tab-title')</title>
-    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-    <!-- Bootstrap 3.3.2 -->
-    <!-- FontAwesome 4.3.0 -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <!-- Ionicons 2.0.0 -->
-    <link href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet" type="text/css" />
-    <!-- Theme style -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="{{asset('assets/vendor/bootstrap/css/bootstrap.min.css')}}">
-    <link href="{{asset('assets/vendor/fonts/circular-std/style.css')}}" rel="stylesheet">
-  <link rel="stylesheet" href="{{asset('assets/libs/css/style.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/vendor/fonts/fontawesome/css/fontawesome-all.css')}}">
-  <link rel="stylesheet" href="{{asset('assets/vendor/charts/chartist-bundle/chartist.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/vendor/charts/morris-bundle/morris.css')}}">
-  <link rel="stylesheet" href="{{asset('assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/vendor/charts/c3charts/c3.css')}}">
-        @yield('extra-head')
-        @yield('custom-css')
+    <title>@yield('title')</title>
+
+    <!-- Bootstrap -->
+    <link href="{{asset('gentelella-master/vendors/bootstrap/dist/css/bootstrap.min.css')}}" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="{{asset('gentelella-master/vendors/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="{{asset('gentelella-master/vendors/nprogress/nprogress.css')}}" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="{{asset('gentelella-master/vendors/iCheck/skins/flat/green.css')}}" rel="stylesheet">
+    <!-- Datatables -->
+    <link href="{{asset('gentelella-master/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('gentelella-master/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('gentelella-master/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('gentelella-master/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('gentelella-master/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css')}}" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="{{asset('gentelella-master/build/css/custom.min.css')}}" rel="stylesheet">
   </head>
-  <body class="skin-green">
-    <div class="wrapper">
 
-        {{-- Header navbar --}}
-    @include('partials.dashboard.navbar')
-    {{-- Left sidebar --}}
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Rapports BioStar V2</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+              </div>
+              <div class="profile_info">
+                <span>Menu</span>
+
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+
     @include('partials.dashboard.sidebar')
 
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
 
-      <!-- Left side column. contains the logo and sidebar -->
+        <!-- top navigation -->
+    @include('partials.dashboard.navbar')
+        <!-- /top navigation -->
 
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+            @yield('header')
+            <div class="clearfix"></div>
+            @yield('content')
+          </div>
+        </div>
+        <!-- /page content -->
 
-      <!-- Right side column. Contains the navbar and content of the page -->
-      < <div class="dashboard-wrapper">
-       
-      @yield('header')
-      @yield('content')
-
+        <!-- footer content -->
       @include('partials.dashboard.footer')
+        <!-- /footer content -->
 
-      </div><!-- /.content-wrapper -->
-
-
-
-
-
+    <!-- jQuery -->
     @include('partials.dashboard.javascript')
-@yield('extra-js')
 @yield('custom-js')
-    </body>
+  </body>
 </html>

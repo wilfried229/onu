@@ -1,19 +1,29 @@
-<script src="{{asset('assets/vendor/jquery/jquery-3.3.1.min.js')}}"></script>
-<!-- bootstap bundle js -->
-<script src="{!!asset('assets/vendor/bootstrap/js/bootstrap.bundle.js')!!}"></script>
-<!-- slimscroll js -->
-<script src="{{asset('assets/vendor/slimscroll/jquery.slimscroll.js')}}"></script>
-<!-- main js -->
-<script src="{{asset('assets/libs/js/main-js.js')}}"></script>
-<!-- chart chartist js -->
-<script src="{{asset('assets/vendor/charts/chartist-bundle/chartist.min.js')}}"></script>
-<!-- sparkline js -->
-<script src="{{asset('assets/vendor/charts/sparkline/jquery.sparkline.js')}}"></script>
-<!-- morris js -->
-<script src="{{asset('assets/vendor/charts/morris-bundle/raphael.min.js')}}"></script>
-<script src="{{asset('assets/vendor/charts/morris-bundle/morris.js')}}"></script>
-<!-- chart c3 js -->
-<script src="{{asset('assets/vendor/charts/c3charts/c3.min.js')}}"></script>
-<script src="{{asset('assets/vendor/charts/c3charts/d3-5.4.0.min.js')}}"></script>
-<script src="{{asset('assets/vendor/charts/c3charts/C3chartjs.js')}}"></script>
-<script src="{{asset('assets/libs/js/dashboard-ecommerce.js')}}"></script>
+
+    <script src="{{asset('gentelella-master/vendors/jquery/dist/jquery.min.js')}}"></script>
+    <!-- Bootstrap -->
+    <script src="{{asset('gentelella-master/vendors/bootstrap/dist/js/bootstrap.min.js')}}"></script>
+    <!-- FastClick -->
+    <script src="{{asset('gentelella-master/vendors/fastclick/lib/fastclick.js')}}"></script>
+    <!-- NProgress -->
+    <script src="{{asset('gentelella-master/vendors/nprogress/nprogress.js')}}"></script>
+    <!-- iCheck -->
+    <script src="{{asset('gentelella-master/vendors/iCheck/icheck.min.js')}}"></script>
+    <!-- Datatables -->
+    <script src="{{asset('gentelella-master/vendors/datatables.net/js/jquery.dataTables.min.js')}}"></script>
+    <script src="{{asset('gentelella-master/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js')}}"></script>
+    <script src="{{asset('gentelella-master/vendors/datatables.net-buttons/js/dataTables.buttons.min.js')}}"></script>
+    <script src="{{asset('gentelella-master/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js')}}"></script>
+    <script src="{{asset('gentelella-master/vendors/datatables.net-buttons/js/buttons.flash.min.js')}}"></script>
+    <script src="{{asset('gentelella-master/vendors/datatables.net-buttons/js/buttons.html5.min.js')}}"></script>
+    <script src="{{asset('gentelella-master/vendors/datatables.net-buttons/js/buttons.print.min.js')}}"></script>
+    <script src="{{asset('gentelella-master/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js')}}"></script>
+    <script src="{{asset('gentelella-master/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js')}}"></script>
+    <script src="{{asset('gentelella-master/vendors/datatables.net-responsive/js/dataTables.responsive.min.js')}}"></script>
+    <script src="{{asset('gentelella-master/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js')}}"></script>
+    <script src="{{asset('gentelella-master/vendors/datatables.net-scroller/js/dataTables.scroller.min.js')}}"></script>
+    <script src="{{asset('gentelella-master/vendors/jszip/dist/jszip.min.js')}}"></script>
+    <script src="{{asset('gentelella-master/vendors/pdfmake/build/pdfmake.min.js')}}"></script>
+    <script src="{{asset('gentelella-master/vendors/pdfmake/build/vfs_fonts.js')}}"></script>
+
+    <!-- Custom Theme Scripts -->
+<script src="{{asset('gentelella-master/build/js/custom.min.js')}}"></script>

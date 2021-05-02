@@ -16,3 +16,6 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::get('rapport/absence/{date}/{names}','RapportController@dateAbsent')->name('rapport.mensuels');
