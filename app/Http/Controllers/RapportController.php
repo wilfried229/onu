@@ -90,7 +90,7 @@ class RapportController extends Controller
         $lecteurs = DB::table('t_devwgd')->get();
         $name = DB::table('t_dr')->get();
 
-    //  dd($lecteurs);
+     //dd($lecteurs);
 
         return view('rapports.index',compact('lecteurs','name'));
     }
